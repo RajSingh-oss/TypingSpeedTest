@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./tpye.js"></script>
+    <link rel="stylesheet" href="type.css">
+    <title>Test your Typing</title>
+</head>
+<body id="body">
+    <header>
+
+    </header>
+    <div id="itom1">
+
+        <div class="dvd">
+            <input type="file" name="file" id="file">
+            <input type="button" id="file_btn" value="Ok" onclick="read()">
+        </div>
+        <div class="display">
+            <textarea name="typed" id="display" cols="30" rows="10" class="display1" onkeypress="return key_pressed(event)"></textarea>
+            <div id="real">
+                Please choose a txt file and click on "Ok" button <br> happy learing thank you !!
+            </div>
+        </div>
+        <div class="buttons" id="btns">
+            <div class="line1">
+                <input type="button" id="btn_`" class="btn" value="~">
+                <input type="button" id="btn_1" class="btn , btn_!" value="1">
+                <input type="button" id="btn_2" class="btn" value="2">
+                <input type="button" id="btn_3" class="btn" value="3">
+                <input type="button" id="btn_4" class="btn" value="4">
+                <input type="button" id="btn_5" class="btn" value="5">
+                <input type="button" id="btn_6" class="btn" value="6">
+                <input type="button" id="btn_7" class="btn" value="7">
+                <input type="button" id="btn_8" class="btn" value="8">
+                <input type="button" id="btn_9" class="btn" value="9">
+                <input type="button" id="btn_0" class="btn" value="0">
+                <input type="button" id="btn_-" class="btn" value="-">
+                <input type="button" id="btn_=" class="btn" value="=">
+                <input type="button" id="btn_back" class="btn" value="        Backspace">
+            </div>
+            <div class="line2">
+                <input type="button" id="btn_Tab" class="btn" value="Tab        ">
+                <input type="button" id="btn_q" class="btn" value="Q">
+                <input type="button" id="btn_w" class="btn" value="W">
+                <input type="button" id="btn_e" class="btn" value="E">
+                <input type="button" id="btn_r" class="btn" value="R">
+                <input type="button" id="btn_t" class="btn" value="T">
+                <input type="button" id="btn_y" class="btn" value="Y">
+                <input type="button" id="btn_u" class="btn" value="U">
+                <input type="button" id="btn_i" class="btn" value=" I ">
+                <input type="button" id="btn_o" class="btn" value="O">
+                <input type="button" id="btn_p" class="btn" value="P">
+                <input type="button" id="btn_[" class="btn" value="{">
+                <input type="button" id="btn_]" class="btn" value="}">
+                <input type="button" id="btn_\" class="btn" value="|             ">
+            </div>
+            <div class="line3">
+                <input type="button" id="btn_Caps" class="btn" value="Caps Lock   ">
+                <input type="button" id="btn_a" class="btn" value="A">
+                <input type="button" id="btn_s" class="btn" value="S">
+                <input type="button" id="btn_d" class="btn" value="D">
+                <input type="button" id="btn_f" class="btn" value="F">
+                <input type="button" id="btn_g" class="btn" value="G">
+                <input type="button" id="btn_h" class="btn" value="H">
+                <input type="button" id="btn_j" class="btn" value="J">
+                <input type="button" id="btn_k" class="btn" value="K">
+                <input type="button" id="btn_l" class="btn" value="L">
+                <input type="button" id="btn_;" class="btn" value=";">
+                <input type="button" id="btn_'" class="btn" value="'">
+                <input type="button" id="btn_Enter" class="btn" value="                      Enter">
+            </div>
+            <div class="line4">
+                <input type="button" id="btn_Shif_L" class="btn" value="Shift                        ">
+                <input type="button" id="btn_z" class="btn" value="Z">
+                <input type="button" id="btn_x" class="btn" value="X">
+                <input type="button" id="btn_c" class="btn" value="C">
+                <input type="button" id="btn_v" class="btn" value="V">
+                <input type="button" id="btn_b" class="btn" value="B">
+                <input type="button" id="btn_n" class="btn" value="N">
+                <input type="button" id="btn_m" class="btn" value="M">
+                <input type="button" id="btn_," class="btn" value=",">
+                <input type="button" id="btn_." class="btn" value=".">
+                <input type="button" id="btn_/" class="btn" value="/">
+                <input type="button" id="btn_Shift_R" class="btn" value="                                Shift">
+            </div>
+            <div class="line5">
+                <input type="button" id="btn_Ctrl_L" class="btn" value=" Ctrl  ">
+                <input type="button" id="btn_Fn_L" class="btn" value="  Fn ">
+                <input type="button" id="btn_Win" class="btn" value=" Win ">
+                <input type="button" id="btn_Alt" class="btn" value=" Alt ">
+                <input type="button" id="btn_ " class="btn" value="                                                                                       
+                                ">
+                <input type="button" id="btn_AltGr" class="btn" value="AltGr">
+                <input type="button" id="btn_Fn" class="btn" value="Fn ">
+                <input type="button" id="btn_Ctrl_R" class="btn" value="  Ctrl">
+            </div>
+        </div>
+    </div>
+
+    <input type="button" title="Show your typing result" class="backbtn" value="See what you typed" onclick="back()">
+    <div id="itom2">
+        <h1>You heve coumplited the typing test</h1>
+        <p id="mark" class="scor"></p>
+        <p id="time" class="meter"></p>
+        <div id="speed" class="meter"></div>
+        <p id="wrong" class="meter"></p>
+        
+        <h3 id="mess2" class="meter">keep learing</h3>
+        <p id="mess"></p>
+        <div class="test">
+            <a class="restart" title="click me for a new test" href="./index.html">test agen</a>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>

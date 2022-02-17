@@ -1,0 +1,107 @@
+body{
+    background-color: rgb(150, 143, 143);
+}
+.display{
+    width: 100%;
+    background-color: rgb(66, 29, 29);
+}
+#real{
+    height: 90px;
+    width: 99%;
+    font-size: 25px;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: aliceblue;
+    overflow: auto;
+}
+.dvd{
+    background-color: bisque;
+    width: 325px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.display1{
+    height: 110px;
+    width: 99%;
+    margin: 3px;
+    background-color: rgb(14, 13, 13);
+    color: aliceblue;
+    font-size: 22px;
+}
+.line1 , .line2 , .line3 , .line4 ,.line5{
+    width: 1100px;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.btn{
+    margin: 3px;
+    padding: 25px;
+    font: bolder;
+    box-shadow: 3px 5px black;
+    border: 2px solid blue;
+    border-radius: 6px;
+    color: rgb(185, 180, 180);
+    background-color: rgb(48, 46, 46);
+    box-shadow: inset 0px 3px 3px rgb(129, 128, 128);
+    cursor: pointer;
+}
+#file{
+    background-color: aqua;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#file_btn{
+    background-color: green;
+    margin: 7px;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#itom1{
+    display: block;
+}
+#itom2{
+    display: none;
+    text-align: center;
+}
+/* body{
+    background-color: rgb(155, 243, 54);
+    text-align: center;
+} */
+#mess{
+    font-size: 50px;
+}
+.meter{
+    font-size: 30px;
+}
+.scor{
+    font-size: 70px;
+}
+.restart{
+    margin: 5px;
+    padding: 5px;
+    background-color: aqua;
+    border-radius: 8px;
+    font: bolder;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+}
+.backbtn{
+    margin: 5px;
+    padding: 5px;
+    background-color: aqua;
+    border-radius: 6px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    left: 100px;
+}
